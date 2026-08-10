@@ -1,0 +1,32 @@
+[
+  {
+    "finding": "F-001",
+    "key": "MWPW-199610",
+    "status": "created"
+  },
+  {
+    "finding": "F-002",
+    "key": "MWPW-199611",
+    "status": "created"
+  },
+  {
+    "finding": "F-003",
+    "key": "MWPW-199612",
+    "status": "created"
+  },
+  {
+    "finding": "F-004",
+    "key": "MWPW-199613",
+    "status": "created"
+  },
+  {
+    "finding": "F-005",
+    "key": "MWPW-199614",
+    "status": "created"
+  },
+  {
+    "finding": "F-006",
+    "key": "MWPW-199615",
+    "status": "created"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "jira-test-agent": {
+      "command": "C:\\Python314\\python.exe",
+      "args": [
+        "c:\\Users\\venkatas\\Projects-code\\Acom-e2e-Req2Release-AIWeek\\blast-agent\\tools\\jira_mcp_server.py"
+      ],
+      "env": {}
+    },
+    "playwright": {
+      "command": "npx",
+      "args": ["@playwright/mcp@latest"]
+    }
+  }
+}
