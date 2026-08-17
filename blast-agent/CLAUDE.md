@@ -75,6 +75,14 @@ output/
   Then  ...
   [And  ...]
 ```
+### test_report.md structure 
+```
+## Feature: <feature name>
+## Page details : <page url where test run>
+
+### Scenario: <title>
+  issue details...
+```
 
 ---
 
@@ -82,6 +90,7 @@ output/
 - NEVER hardcode credentials. Always read from `.env`.
 - Token from `objective.md` must be copied to `.env` as `JIRA_TOKEN`.
 - Download image attachments to `.tmp/<TICKET_ID>/` before passing to Claude.
+- Download excel attachments to `.tmp/<TICKET_ID_EXCEL>/` before passing to Claude.
 - Claude model: `claude-sonnet-4-6`.
 - If Jira description is empty, use comments + summary as context.
 - Output files go to `output/` directory. Create it if missing.
@@ -121,6 +130,9 @@ User: "Generate test plan for PROJ-1234"
 ---
 
 ## sample prompts
+
+Kick start:
+generate test plan for MWPW-XXXXXX
 
 Automation Prompt:
 Automate all test cases using playwright MCP from MWPW-200902_test_cases.md output file. Create folder with name ‘firefly-remove-background’ and create individual test files for every test case feature, page objects, tests as separate files for understanding and maintainability. For the file upload cases take the image from “…/blast-agent\tests\assets\female.png”. once automation script generated, update us back. Do not run until we ask
